@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./election commision.png" alt="Logo" class="header-logo">
+            </div>
+    
+            <div class="matdata">
+                <h1>मतदाता चयन प्रणाली</h1>
+                <p>अपने उम्मीदवार का चयन करें और अपना वोट सुरक्षित रूप से दर्ज करें!</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="authentication-container">
+            <video id="camera-preview" autoplay></video>
+            <div class="auth-buttons">
+                <button id="retry-btn">Retry</button>
+                <button id="confirm-btn">Confirm</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+    </footer>
+    <script src="face-authentication.js"></script>
+</body>
+</html>

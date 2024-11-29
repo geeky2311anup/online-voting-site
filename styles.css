@@ -1,0 +1,323 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Candidates section */
+.candidates {
+    display: flex;
+    flex-direction: column; /* Stack the header and candidates */
+    align-items: center; /* Center align the header */
+    margin-top: 2rem;
+}
+
+.candidates h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.candidates-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of rows */
+    justify-content: center; /* Center align candidates */
+    gap: 2rem; /* Add space between candidates */
+    width: 100%;
+}
+
+.candidate {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Fixed width for candidate cards */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between the content */
+    align-items: center;
+    height: 300px; /* Ensure consistent height for all cards */
+}
+
+.candidate h3 {
+    margin: 0.5rem 0;
+}
+
+/* Styled vote button */
+.vote-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    width: 60px; /* Circular button size */
+    height: 60px;
+    border-radius: 50%; /* Makes the button circular */
+    font-size: 16px; /* Text size */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+     /* Push the button to the bottom */
+}
+
+.vote-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.vote-btn:active {
+    background-color: #3e8e41; /* Even darker green on click */
+    transform: scale(1); /* Reset scale on click */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.candidate img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.candidate p {
+ font-weight: 800;
+}
+.candidate h3 {
+    font-weight: 1000;
+}
+
+/* Face Authentication Styles */
+.authentication-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#camera-preview {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.auth-buttons button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+////////////////////////////////
+/* Authentication Page Styles */
+
+
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #45a049;
+}
+//////////////////////////
+
+/* Center alignment for the auth-container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0; /* Remove top margin to center vertically */
+}
+
+.form-container {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+////////////////////
+/* General Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;  /* Distance from top */
+    left: 10px; /* Distance from left */
+    width: 40px;  /* Adjust width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* If you want to style the logo hover, you can add this */
+.header-logo:hover {
+    opacity: 0.8;
+}
+///////////////
+/* General Header Styles */
+/* General Header Styles */
+
+///////////////////
+
+
+/* Positioning the logo */
+
+header p{
+ font-weight:700 ;
+}
+header h1{
+    font-weight:1000 ;
+}
+//////////////////////
+
+////////////////////////
+/* General Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between logo and text */
+}
+
+.logo img {
+    width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80px; /* Ensure it doesn't exceed container height */
+}
+
+.matdata {
+    text-align: center;
+    flex-grow: 1; /* Take up remaining space */
+}
+
+.matdata h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.matdata p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* To ensure both the image and text align properly */
+header {
+    height: 70px; /* Set header height */
+}
+////////////////////////////////////////////
+.matdata h1 {
+    margin: 0; /* Remove default margins */
+    font-size: 1.8 rem;
+    font-weight: bold;
+    
+}
+
+.matdata p {
+    margin: 0; /* Remove default margins */
+    margin-top: 0.2rem; /* Add space between h1 and p */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+

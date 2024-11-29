@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./election commision.png" alt="Logo" class="header-logo">
+            </div>
+    
+            <div class="matdata">
+                <h1>मतदाता चयन प्रणाली</h1>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="auth-container">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name" required>
+                    
+                    <label for="signup-aadhar">Aadhar Number:</label>
+                    <input type="text" id="signup-aadhar" placeholder="Enter your Aadhar number" maxlength="12" required>
+                    
+                    <label for="signup-dob">Date of Birth:</label>
+                    <input type="date" id="signup-dob" required>
+                    
+                    <button type="submit" class="form-btn">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container">
+                <h2>Log In</h2>
+                <form id="login-form">
+                    <label for="login-aadhar">Aadhar Number:</label>
+                    <input type="text" id="login-aadhar" placeholder="Enter your Aadhar number" maxlength="12" required>
+                    
+                    <button type="submit" class="form-btn">Log In</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+</html>
